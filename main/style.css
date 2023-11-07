@@ -1,0 +1,162 @@
+/* Basic styling */
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Georgia, serif;
+			line-height: 1.4;
+			
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: normal;
+			font-style: italic;
+		}
+		
+		.body {
+			max-width: 800px;
+			padding: 40px;
+			margin: 0 auto;
+		}
+		.meta {
+			margin: 0 0 40px 0;
+			font-size: 0.8em;
+		}
+		
+		#demo-1 {
+			position: relative; 
+			overflow: hidden; 
+			width: 100%;
+			min-height: 670px;
+			background-color: #999;
+		}
+		.demo-inner-content {
+			position: relative; 
+			z-index: 2; 
+			margin: 180px auto;
+			padding: 40px;
+			max-width: 600px;
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.demo-inner-content h1 {
+			font-size: 2.5em;
+			margin: 0;
+		}
+
+		/*preloader*/
+		#loader {
+			position:fixed ;
+			width: 100%;
+			height: 100vh;
+			z-index: 1;
+			overflow: visible;
+			background: #fff url('photos/loader.gif') no-repeat center center;
+		}
+
+/*buttons*/
+		 	body{
+		  background: white;
+		  padding-top: 35vh;
+		}
+
+		.container{
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.transition-btn{
+		  margin:25px;
+		  width: 200px;
+		  height: 100px;
+		  font-size: 1.5rem;
+		  border: 3px solid #181818;
+		  border-radius: 35px 0 35px 0px;
+		  background: transparent;
+		  color: #181818;
+		  font-weight: bold;
+		  padding: 15px 25px;
+		  transition: border-radius 1.5s, border 1.5s, color 1.5s;
+		}
+
+		.transition-btn:hover{
+		  cursor: pointer;
+		  border-radius: 0 35px 0 35px;
+		  border: 3px solid darkcyan;
+		  color: darkcyan;
+		  background-color: yellow;
+		}
+
+		.sharp-btn{
+		  margin:25px;
+		  width: 200px;
+		  height: 100px;
+		  font-size: 1.5rem;
+		  border: 3px solid #181818;
+		  border-radius: 35px 0 35px 0px;
+		  background: transparent;
+		  color: #181818;
+		  font-weight: bold;
+		  padding: 15px 25px;
+		}
+
+		.sharp-btn:hover{
+		  cursor: pointer;
+		  border-radius: 0 35px 0 35px;
+		  border: 3px solid #0d0d0d;
+		  color: #0d0d0d;
+		  background-color: #00ff55;
+		}
+		
+/*Opening table*/
+ .demo-bg{
+background: #ffac0c;
+margin-top: 60px;
+}
+.business-hours {
+background: #222; 
+padding: 40px 14px;
+margin-top: -15px;
+font-family:Lucida Console;
+border-radius:4px;
+margin:10px;
+box-shadow: 0 0 10px black;
+padding:0 10px 0 10px;
+overflow: hidden;
+display: inline-block;
+margin-left: 30%;  
+margin-right: auto;  
+border-collapse: collapse;    
+width: 500px;  
+text-align: center;  
+font-size: 20px;  
+}
+.business-hours:before{
+content: '';
+width: 23px;
+height: 23px;
+background: #111;
+position: absolute;
+top: 5px;
+left: -12px;
+transform: rotate(-45deg);
+z-index: -1;
+}
+.business-hours .title {
+font-size: 20px;
+color: #BBB;
+text-transform: uppercase;
+padding-left: 5px;
+}
+.business-hours li {
+	color: #888;
+line-height: 30px;
+border-bottom: 1px solid #333; 
+}
+.business-hours li:last-child {
+border-bottom: none; 
+}
+.business-hours .opening-hours li.today {
+color: #ffac0c; 
+}
